@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f3f2f3ef;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header-left img { 
+    height: 40px;
+    object-fit: contain; 
+    margin-right: 10px;
+}
+.header{
+
+    width: 100%;
+    /* by using postion as stick the header section will not move */
+
+    position: sticky;
+    top: 0px;
+
+
+    z-index: 999; 
+    display: flex;
+    /* isko lagane se saare content beech me aajayenge */
+    justify-content: space-evenly;
+    border-bottom: .1px solid lightgrey;
+    padding: 10px;
+    background-color: white;
+}
+.header-left{
+    display: flex; 
+}
+.header-right{
+    display: flex;
+}
+
+.search{
+    /* display flex lagane se search k davva barabari karne k liye badha ho jaayega */
+    display: flex;
+    /* align items centerkarne se ye mid me pehle ki tahan patla ho jayega lekin mid me aajeyega */
+    align-items: center;
+    padding: 10px;
+    background-color:rgb(238, 243, 248);
+    height: 22px;
+    /* width: 215px; */
+    color: grey;
+    
+}
+.search input{
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.header-option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
